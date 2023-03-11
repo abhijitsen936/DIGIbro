@@ -30,7 +30,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button login1, signup1;
+    Button signup1;
     private FirebaseAuth mAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
