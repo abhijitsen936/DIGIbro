@@ -90,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                                                                       v[0] = value.getString("Full Name");
                                                                      if(v[0]!= null){
                                                                Toast.makeText(MainActivity.this, "You are already Registered", Toast.LENGTH_SHORT).show();
+
                                                                 startActivity(new Intent(MainActivity.this, CandidateDetails.class));
 return;
                                                                }else {

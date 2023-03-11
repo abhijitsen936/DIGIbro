@@ -41,7 +41,7 @@ public class CandidateDetails extends AppCompatActivity {
     private static final int FILE_REQUEST_ID = 2;
     private final int IMG_REQUEST_ID = 1;
     private ImageView mImageView;
-    private TextView mNameTextView, mAgeTextView, mEmailTextView;
+    private TextView mNameTextView, mAgeTextView, mEmailTextView, CName;
     private Button mResumeButton, IMGButton, CVButton;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     private FirebaseFirestore mFirestore;
@@ -78,6 +78,7 @@ public class CandidateDetails extends AppCompatActivity {
         mResumeButton = findViewById(R.id.button3);
         IMGButton=findViewById(R.id.button5);
         CVButton=findViewById(R.id.button6);
+        CName=findViewById(R.id.textView14);
 
         //   // Initialize Firebase components
         mFirestore = FirebaseFirestore.getInstance();
@@ -117,6 +118,7 @@ public class CandidateDetails extends AppCompatActivity {
                     mNameTextView.setText(name);
                     mAgeTextView.setText(age);
                     mEmailTextView.setText(email);
+                    CName.setText(candidateId);
 
                     //     // Load candidate image from Firebase Storage
                     Picasso.get().load(imageFilename).into(mImageView);
