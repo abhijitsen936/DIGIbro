@@ -92,10 +92,10 @@ public class MainActivity extends AppCompatActivity {
                                                                Toast.makeText(MainActivity.this, "You are already Registered", Toast.LENGTH_SHORT).show();
 
                                                                 startActivity(new Intent(MainActivity.this, CandidateDetails.class));
-return;
+
                                                                }else {
                                                                          startActivity(new Intent(MainActivity.this, Login.class));
-                                                                         return;
+
                                                                      }
 
 
@@ -169,6 +169,7 @@ return;
 
                                 Toast.makeText(MainActivity.this, "Welcome.", Toast.LENGTH_SHORT).show();
 
+
                             }
 
 
@@ -178,6 +179,7 @@ return;
                                 Toast.makeText(MainActivity.this, "Please SignUp.", Toast.LENGTH_SHORT).show();
                             }
                         });
+
             }
         });
 
